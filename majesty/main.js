@@ -16,25 +16,21 @@ const createQueen = (queenId, queenName) => {
 }
 
 createQueen(1, "Trinity Terry")
+createQueen(2, "Queen 1")
+createQueen(3, "Queen 2")
+createQueen(4, "Queen 3")
+createQueen(5, "Queen 4")
 
 
-console.log(queens[0].name)
-console.log(queens[0].id)
-// const hailTheQueen = (nameString) => {
-//     return `Hail Her Majesty, ${nameString}.`  // This function returns a string
-// };
+console.log(queens)
 
-// const athena = hailTheQueen("Athena Perez") // Argument value is "Athena Perez"
-// console.log(athena);
 
-// const charisse = hailTheQueen("Charisse Ford") // Argument value is "Charisse Ford"
-// console.log(charisse);
+const hailTheQueen = (nameString) => {
+    return `Hail Her Majesty, ${nameString}.`  // This function returns a string
+};
 
-// const jenna = hailTheQueen("Jenna Solis") // Argument value is "Jenna Solis"
-// console.log(jenna);
 
-// const chelsea = hailTheQueen("Chelsea Brooks") // Argument value is "Jenna Solis"
-// console.log(chelsea);
-
-// const ramona = hailTheQueen("Ramona Name")
-// console.log(ramona)
+for (const queenObject of queens) {
+    const hailMessage = hailTheQueen(queenObject.name)  // What should be passed as an argument?
+    console.log(hailMessage)
+};
